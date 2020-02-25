@@ -1,0 +1,111 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+	<style type="text/css">
+.ui-paginator a {
+	margin-right: 5px;
+}
+</style>
+
+	<script widgetVar="statusDialog" id="statusDialog" modal="true">
+		draggable="false" closable="false" resizable="false"
+		showHeader="false">
+		<p:graphicImage library="img" name="ajax-loader.gif" />
+		</script>
+
+
+	<meta content="text/html; charset=UTF-8" />
+	<center>
+		<div class="ui-g">
+			<div class="ui-g-12">
+				<p:panel
+					header="COMPROMISO DE PAGO INMEDIATO CON DESCUENTO AUTORIZADO">
+					<p:growl id="growl" showDetail="true" sticky="true" />
+					<h:form id="frm-home">
+
+						<h:panelGrid columns="2">
+
+
+
+							<h:outputLabel value="Referencia de Pago: *" for="txtReferencia" />
+							<p:inputText id="txtReferencia"
+								value="#{compromisoBean.referencia_pago}" required="true"
+								label="referencia" size="40" autocomplete="off"
+								requiredMessage="Por favor ingrese el numero de referencia"
+								validatorMessage="Formato invalido del número de referencia o excede el máximo de 14 dígitos">
+								<f:validateLength maximum="14" />
+								<f:validateDoubleRange minimum="0" />
+								<p:message for="txtReferencia" />
+							</p:inputText>
+
+							<h:outputLabel value="Correo: *" for="txtCorreo" />
+							<p:inputText autocomplete="off" id="txtCorreo"
+								value="#{compromisoBean.email}" required="true" label="correo"
+								size="40" requiredMessage="Por favor ingrese el correo"
+								validatorMessage="Formato invalido para el correo">
+								<f:validateRegex
+									pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+								<p:message for="txtCorreo" />
+							</p:inputText>
+
+
+							<h:outputLabel value="Descuento a aplicar: *"
+								for="txtDescuentoAplicar"></h:outputLabel>
+							<p:inputNumber symbol="%" symbolPosition="s" emptyValue="sign"
+								minValue="-0.1" maxValue="100" id="txtDescuentoAplicar"
+								value="#{compromisoBean.descuentoAplicar}" required="true"
+								label="descuento aplicar" size="40" autocomplete="off"
+								requiredMessage="Por favor ingrese el descuento a aplicar"
+								validatorMessage="Formato Invalido Descuento Aplicado">
+								<f:validateDoubleRange minimum="0" currencySymbol="$" />
+								<p:message for="txtDescuentoAplicar" />
+							</p:inputNumber>
+
+
+
+							<p:commandButton style="color:red" ajax="false"
+								value="Visualizar Compromiso"
+								actionListener="#{compromisoBean.generateReport02}"
+								icon="ui-icon-search" onclick="PF('statusDialog').show();"
+								oncomplete="PF('statusDialog').hide();">
+							</p:commandButton>
+
+
+							<c:if test="#{compromisoBean.existe2 == true}">
+								<p:commandButton style="color:green" ajax="false"
+									value="Descargar Compromiso" update="@form, visualizar2"
+									actionListener="#{compromisoBean.downloadFile}"
+									icon="ui-icon-check">
+								</p:commandButton>
+							</c:if>
+
+						</h:panelGrid>
+
+
+
+						<div class="column-center" id="visualizar2">
+							<c:if test="#{compromisoBean.existe2 == true}">
+								<c:if test="#{navegacionBean.compromiso02 == 1}">
+									<c:if test="#{compromisoBean.visualizarCompromiso2 == 1}">
+
+										<p:media cache="false"
+											rendered="#{compromisoBean.media ne null}" width="900"
+											height="600" value="#{compromisoBean.media}" player="pdf">
+										</p:media>
+									</c:if>
+								</c:if>
+							</c:if>
+						</div>
+					</h:form>
+				</p:panel>
+			</div>
+		</div>
+	</center>
+
+
+</ui:composition>
+

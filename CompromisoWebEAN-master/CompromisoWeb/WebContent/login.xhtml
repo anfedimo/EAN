@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+	<link rel="stylesheet" type="text/css"
+		href="resources/css/estilos_login.css"></link>
+	<title>Compromiso ean. Colombia-ANFEDIMO</title>
+</h:head>
+<body>
+<script type="text/javascript" src="resources/js/sha1.js"></script>
+	<div class="login-page">
+		<div class="form">
+			<div class="login-triangle"></div>
+		
+			<h:form class="login-form" id="login_form" >
+			
+				<center>
+			<h:commandLink>
+				<h:graphicImage value="/resources/img/logoo.png"
+					style="width: 160px; border-radius: 25px;" />
+			</h:commandLink>
+			</center>
+				<!-- Mensaje Session Expirada -->
+				<c:if test="#{param['response'] eq 3}">
+					<div class="mensaje_error">
+						<center>${mensaje.MENSAJE_SESION_CADUCADA}</center>
+					</div>
+				</c:if>
+				<!-- Mensaje Usuario Contraseña Incorrecta -->
+				<c:if test="#{param['response'] eq 1}">
+					<div class="mensaje_error">
+						<center>${mensaje.MENSAJE_USUARIO_CONTRASENA_INCORRECTO}
+						</center>
+					</div>
+				</c:if>
+				<!-- Mensaje Usuario sin permisos -->
+				<c:if test="#{param['response'] eq 2}">
+					<div class="mensaje_error">
+						<center>${mensaje.MENSAJE_USUARIO_NO_TIENE_PERMISOS}</center>
+					</div>
+				</c:if>
+				<!-- Mensaje Usuario sin permisos -->
+				<c:if test="#{param['response'] eq 4}">
+					<div class="mensaje_error">
+						<center>${mensaje.MENSAJE_USUARIO_NO_EXISTE}</center>
+					</div>
+				</c:if>
+
+				<p:messages id="mensaje" showDetail="false" 
+					autoUpdate="true" showIcon="false" showSummary="true"></p:messages>
+
+				<p>
+					<p:inputText id="usuario" value="#{loginBean..usuario}" autocomplete="off"
+						required="true" a:placeholder="${mensaje.PLACEHOLDER_USUARIO}"
+						requiredMessage="${mensaje.CAMPO_REQUERIDO_USUARIO_LOGIN}"></p:inputText>
+				</p>
+				<p>
+					<p:password id="password" name= "password" autocomplete="off" value="#{loginBean..password}"
+						placeholder="${mensaje.PLACEHOLDER_PASSWORD}" required="true"
+						requiredMessage="${mensaje.CAMPO_REQUERIDO_PASSWORD_LOGIN}"></p:password>
+				</p>
+				<p>
+					<p:commandButton action="#{loginBean..doLogin}"
+						value="#{mensaje.BOTON_INGRESO_LOGIN}"
+						style="width: 100%;padding: 8px;font-weight: bold" update="@form" onclick="cifrar();"></p:commandButton>
+				</p>
+
+			</h:form>
+		</div>
+	</div>
+
+
+<script>
+		function cifrar(variable){
+			
+			var input_pass = document.getElementById("login_form:password");
+			
+			input_pass.value = SHA1(input_pass.value);
+			
+		}
+	</script>	
+</body>
+</html>

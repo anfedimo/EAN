@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<system-libraries>
+    <library path="C:/Users/cochoa/Desktop/glassfish-4.0/glassfish4/glassfish/modules/javax.faces.jar" source="/CompromisoWeb"/>
+</system-libraries>

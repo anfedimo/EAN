@@ -1,0 +1,79 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	template="../../resources/templates/templateGestion.xhtml">
+
+	<style type="text/css">
+.ui-paginator a {
+	margin-right: 5px;
+}
+</style>
+	<ui:define name="content">
+		<meta content="text/html; charset=UTF-8" />
+
+
+		<center>
+			<div class="ui-g">
+				<h:form id="frmCompromiso">
+					<p:tabMenu>
+						<p:menuitem value="COMPROMISO DE PAGO INMEDIATO"
+							icon="ui-icon-star"
+							actionListener="#{navegacionBean.mostrarPaginaCompromiso01}"
+							update="pnlCompromiso">
+						</p:menuitem>
+						<p:menuitem
+							value="COMPROMISO DE PAGO INMEDIATO CON DESCUENTO AUTORIZADO"
+							icon="ui-icon-star"
+							actionListener="#{navegacionBean.mostrarPaginaCompromiso02}"
+							update="pnlCompromiso">
+						</p:menuitem>
+						<p:menuitem value="COMPROMISO DE PAGO A CUOTAS"
+							icon="ui-icon-star"
+							actionListener="#{navegacionBean.mostrarPaginaCompromiso04}"
+							update="pnlCompromiso">
+						</p:menuitem>
+						<p:menuitem value="COMPROMISO DE PAGO A CUOTAS CON DESCUENTO"
+							icon="ui-icon-star"
+							actionListener="#{navegacionBean.mostrarPaginaCompromiso03}"
+							update="pnlCompromiso">
+						</p:menuitem>
+						
+		
+		
+					</p:tabMenu>
+				</h:form>
+				<br /> <br />
+				<div class="ui-g-12">
+					<p:panel id="pnlCompromiso">
+
+						<c:if test="#{navegacionBean.compromiso01 == 1}">
+							<ui:include src="/pages/pago/compromiso01.xhtml" />
+						</c:if>
+
+						<c:if test="#{navegacionBean.compromiso02 == 1}">
+							<ui:include src="/pages/pago/compromiso02.xhtml" />
+						</c:if>
+
+						<c:if test="#{navegacionBean.compromiso03 == 1}">
+							<ui:include src="/pages/pago/compromiso03.xhtml" />
+						</c:if>
+
+						<c:if test="#{navegacionBean.compromiso04 == 1}">
+							<ui:include src="/pages/pago/compromiso04.xhtml" />
+						</c:if>
+
+
+
+					</p:panel>
+
+				</div>
+
+			</div>
+		</center>
+
+	</ui:define>
+</ui:composition>
+

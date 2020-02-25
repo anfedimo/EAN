@@ -1,0 +1,124 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+	<style type="text/css">
+.ui-paginator a {
+	margin-right: 5px;
+}
+</style>
+
+	<script widgetVar="statusDialog" id="statusDialog" modal="true">
+		draggable="false" closable="false" resizable="false"
+		showHeader="false">
+		<p:graphicImage library="img" name="ajax-loader.gif" />
+		</script>
+
+
+	<meta content="text/html; charset=UTF-8" />
+	<center>
+		<div class="ui-g">
+			<div class="ui-g-12">
+				<p:growl id="growl" showDetail="true" sticky="true" />
+				<h:form id="frmcompromiso1">
+					<p:dialog id="dlCompromiso1" closable="true" header="Advertencia"
+						widgetVar="dlCompromiso1" modal="true" styleClass="dialog"
+						width="500" height="60">
+						<p:panel id="pnlDlMensaje">
+							<h:outputText value="#{compromisoBean..mensajeError}" />
+						</p:panel>
+					</p:dialog>
+
+
+
+					<p:panel header="COMPROMISO DE PAGO INMEDIATO" id="pnlCompromiso">
+						<p:growl id="growl" showDetail="true" sticky="true" />
+
+						<h:panelGrid columns="2">
+
+
+
+
+							<h:outputLabel value="Numero de consecutivo: *" for="txtConsecutivo" />
+							<p:inputText id="txtConsecutivo"
+								value="#{compromisoBean..consecutivos}" required="true"
+								label="consecutivo" size="40" autocomplete="off"
+								requiredMessage="Por favor ingrese el número de consecutivo"
+								validatorMessage="Formato invalido del número del consecutivo o excede el máximo de 5 dígitos">
+								<f:validateLength maximum="5" />
+								<f:validateDoubleRange minimum="0" />
+								<p:message for="txtConsecutivo" />
+							</p:inputText>
+
+
+							<h:outputLabel value="Referencia de Pago: *" for="txtReferencia" />
+							<p:inputText id="txtReferencia"
+								value="#{compromisoBean..referencia_pago}" required="true"
+								label="referencia" size="40" autocomplete="off"
+								requiredMessage="Por favor ingrese el número de referencia"
+								validatorMessage="Formato invalido del número de referencia o excede el máximo de 14 dígitos">
+								<f:validateLength maximum="14" />
+								<f:validateDoubleRange minimum="0" />
+								<p:message for="txtReferencia" />
+							</p:inputText>
+
+							<h:outputLabel value="Correo: *" for="txtCorreo" />
+							<p:inputText autocomplete="off" id="txtCorreo"
+								value="#{compromisoBean..email}" required="true" label="correo"
+								size="40" requiredMessage="Por favor ingrese el correo"
+								validatorMessage="Formato invalido para el correo">
+								<f:validateRegex
+									pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+								<p:message for="txtCorreo" />
+							</p:inputText>
+
+
+							<p:commandButton style="color:red" ajax="false"
+								value="Visualizar Compromiso"
+								actionListener="#{compromisoBean..generateReport}"
+								icon="ui-icon-search" onclick="PF('statusDialog').show();"
+								oncomplete="PF('statusDialog').hide();">
+							</p:commandButton>
+
+							<c:if test="#{compromisoBean..existe == true}">
+								<p:commandButton style="color:green" ajax="false"
+									value="Descargar Compromiso"
+									update="txtReferencia, visualizar1"
+									actionListener="#{compromisoBean..downloadFile}"
+									icon="ui-icon-check">
+								</p:commandButton>
+							</c:if>
+
+
+
+						</h:panelGrid>
+						<br />
+						<br />
+
+
+						<div class="column-center" id="visualizar1">
+							<c:if test="#{compromisoBean..existe == true}">
+								<c:if test="#{navegacionBean..compromiso01 == 1}">
+									<c:if test="#{compromisoBean..visualizarCompromiso1 == 1}">
+
+										<p:media cache="false"
+											rendered="#{compromisoBean..media ne null}" width="900"
+											height="600" value="#{compromisoBean..media}" player="pdf">
+										</p:media>
+									</c:if>
+								</c:if>
+							</c:if>
+						</div>
+
+					</p:panel>
+				</h:form>
+			</div>
+		</div>
+	</center>
+
+
+</ui:composition>
+

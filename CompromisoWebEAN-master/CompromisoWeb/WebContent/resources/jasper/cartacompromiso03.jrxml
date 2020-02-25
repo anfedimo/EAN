@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cartacompromiso01" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b074be5c-89c9-46e6-9681-9104ed0051fd">
+	<property name="ireport.zoom" value="1.2100000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="943"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 3" uuid="b5add10f-60cc-449c-b009-8d960934b9c3">
+		<parameter name="Descuento_aplicar" class="java.lang.Double"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="documento" class="java.lang.String">
+			<fieldDescription><![CDATA[documento]]></fieldDescription>
+		</field>
+		<field name="email" class="java.lang.String">
+			<fieldDescription><![CDATA[email]]></fieldDescription>
+		</field>
+		<field name="estado" class="java.lang.Integer">
+			<fieldDescription><![CDATA[estado]]></fieldDescription>
+		</field>
+		<field name="fechaCrea" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[fechaCrea]]></fieldDescription>
+		</field>
+		<field name="fechaMod" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[fechaMod]]></fieldDescription>
+		</field>
+		<field name="fecha_actualizacion" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[fecha_actualizacion]]></fieldDescription>
+		</field>
+		<field name="fecha_actualizo" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[fecha_actualizo]]></fieldDescription>
+		</field>
+		<field name="fecha_compromiso" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[fecha_compromiso]]></fieldDescription>
+		</field>
+		<field name="fecha_gestion" class="java.lang.String">
+			<fieldDescription><![CDATA[fecha_gestion]]></fieldDescription>
+		</field>
+		<field name="honorarios" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[honorarios]]></fieldDescription>
+		</field>
+		<field name="idUsuarioCrea" class="java.lang.Integer">
+			<fieldDescription><![CDATA[idUsuarioCrea]]></fieldDescription>
+		</field>
+		<field name="interes_mora" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[interes_mora]]></fieldDescription>
+		</field>
+		<field name="nombre" class="java.lang.String">
+			<fieldDescription><![CDATA[nombre]]></fieldDescription>
+		</field>
+		<field name="nombreUsuario" class="java.lang.String">
+			<fieldDescription><![CDATA[nombreUsuario]]></fieldDescription>
+		</field>
+		<field name="referencia_pago" class="java.lang.String">
+			<fieldDescription><![CDATA[referencia_pago]]></fieldDescription>
+		</field>
+		<field name="saldo" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[saldo]]></fieldDescription>
+		</field>
+		<field name="valor_pactado" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[valor_pactado]]></fieldDescription>
+		</field>
+		<field name="obligacion_total" class="java.math.BigDecimal"/>
+		<field name="intereses_mora_descuento" class="java.math.BigDecimal"/>
+		<field name="honorarios_descuento" class="java.math.BigDecimal"/>
+	</subDataset>
+	<subDataset name="Table Dataset cuota" uuid="0285df2c-d21d-4d02-af74-5f88f7a5c2d5">
+		<parameter name="Descuento_aplicar" class="java.lang.Double"/>
+		<parameter name="Referencia" class="java.lang.String"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="valorCuota" class="java.math.BigDecimal"/>
+		<field name="saldo" class="java.math.BigDecimal"/>
+		<field name="fechaCuota" class="java.util.Date"/>
+	</subDataset>
+	<subDataset name="New Dataset 1" uuid="2cc5de46-dce0-4d9c-a2fc-11a363c84fec"/>
+	<subDataset name="Table Dataset cuota_1" uuid="5682e2bc-2633-4a39-b5ee-396a40de1cf1">
+		<parameter name="Descuento_aplicar" class="java.lang.Double"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="documento" class="java.lang.String">
+			<fieldDescription><![CDATA[documento]]></fieldDescription>
+		</field>
+		<field name="email" class="java.lang.String">
+			<fieldDescription><![CDATA[email]]></fieldDescription>
+		</field>
+		<field name="estado" class="java.lang.Integer">
+			<fieldDescription><![CDATA[estado]]></fieldDescription>
+		</field>
+		<field name="fechaCrea" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[fechaCrea]]></fieldDescription>
+		</field>
+		<field name="fechaMod" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[fechaMod]]></fieldDescription>
+		</field>
+		<field name="fecha_actualizacion" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[fecha_actualizacion]]></fieldDescription>
+		</field>
+		<field name="fecha_actualizo" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[fecha_actualizo]]></fieldDescription>
+		</field>
+		<field name="fecha_compromiso" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[fecha_compromiso]]></fieldDescription>
+		</field>
+		<field name="fecha_gestion" class="java.lang.String">
+			<fieldDescription><![CDATA[fecha_gestion]]></fieldDescription>
+		</field>
+		<field name="honorarios" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[honorarios]]></fieldDescription>
+		</field>
+		<field name="idUsuarioCrea" class="java.lang.Integer">
+			<fieldDescription><![CDATA[idUsuarioCrea]]></fieldDescription>
+		</field>
+		<field name="interes_mora" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[interes_mora]]></fieldDescription>
+		</field>
+		<field name="nombre" class="java.lang.String">
+			<fieldDescription><![CDATA[nombre]]></fieldDescription>
+		</field>
+		<field name="nombreUsuario" class="java.lang.String">
+			<fieldDescription><![CDATA[nombreUsuario]]></fieldDescription>
+		</field>
+		<field name="referencia_pago" class="java.lang.String">
+			<fieldDescription><![CDATA[referencia_pago]]></fieldDescription>
+		</field>
+		<field name="saldo" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[saldo]]></fieldDescription>
+		</field>
+		<field name="valor_pactado" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[valor_pactado]]></fieldDescription>
+		</field>
+		<field name="obligacion_total" class="java.math.BigDecimal"/>
+		<field name="intereses_mora_descuento" class="java.math.BigDecimal"/>
+		<field name="honorarios_descuento" class="java.math.BigDecimal"/>
+		<field name="valor_cuota" class="java.math.BigDecimal"/>
+		<field name="saldo_cuota" class="java.math.BigDecimal"/>
+		<field name="fecha_pago" class="java.util.Date"/>
+	</subDataset>
+	<parameter name="Referencia" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+		<defaultValueExpression><![CDATA[$P{Referencia}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Email" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Email}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Nombre" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Nombre}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cedula" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[$P{cedula}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Cuenta_Numero" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Cuenta_Numero}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Saldo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Saldo}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Interes_Mora" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Interes_Mora}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Honorarios" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Honorarios}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Obligacion_Total" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Obligacion_Total}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Fecha_Gestion" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Fecha_Gestion}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Fecha_Actualizacion" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Fecha_Actualizacion}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Fecha_Compromiso" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Fecha_Compromiso}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Fecha_Actualizo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Fecha_Actualizo}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Cedula" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{Cedula}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Id_acuerdo" class="java.lang.String"/>
+	<parameter name="Dias_Mora" class="java.lang.Integer"/>
+	<parameter name="Descuento_aplicar" class="java.lang.Double"/>
+	<parameter name="Descuento_aplicar_letras" class="java.lang.String"/>
+	<parameter name="Obligacion_Total_Descuento" class="java.math.BigDecimal"/>
+	<parameter name="Obligacion_Total_Descuento_letras" class="java.lang.String"/>
+	<parameter name="Descuento_Calculo" class="java.lang.Double"/>
+	<parameter name="Obligacion_Total_Letra" class="java.lang.String"/>
+	<parameter name="Obligacion_Total_Pesos" class="java.lang.String"/>
+	<parameter name="TABLA" class="ean.compromisos.bean..Lista"/>
+	<parameter name="CUOTAS" class="java.util.List"/>
+	<parameter name="Dia_acuerdo" class="java.lang.Integer"/>
+	<parameter name="Dia_acuerdo_letras" class="java.lang.String"/>
+	<parameter name="Mes_acuerdo" class="java.lang.Integer"/>
+	<parameter name="Mes_acuerdo_letras" class="java.lang.String"/>
+	<parameter name="Anio_acuerdo" class="java.lang.Integer"/>
+	<parameter name="Anio_acuerdo_letras" class="java.lang.String"/>
+	<parameter name="Dia_compromiso_letras" class="java.lang.String"/>
+	<parameter name="Dia_compromiso" class="java.lang.Integer"/>
+	<parameter name="LOGOean." class="java.lang.String"/>
+	<parameter name="LOGOSISTEM" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT top (1) ttd.Email, ttd.Nombre, ttc.Documento as cedula, ttc.Referencia_Pago as Cuenta_Numero,
+ ttca.Saldo, ttca.Interes_Mora, ttca.honorarios, ttc.Valor_Pactado as Obligacion_Total, ttc.Fecha_Gestion, ttc.Fecha_Actualizacion, ttc.Fecha_Compromiso, ttca.Fecha_Actualizo
+FROM telcos.ean.colombia.compromiso ttc with(nolock)
+inner join telcos.ean.colombia.direccion ttd with(nolock) on ttd.Referencia_Pago = ttc.Referencia_Pago
+inner join telcos.ean.colombia.cartera ttca with(nolock) on ttca.Referencia_Pago = ttc.Referencia_Pago
+where ttd.Referencia_Pago = $P{Referencia}  order by Fecha_Actualizo desc]]>
+	</queryString>
+	<field name="Email" class="java.lang.String"/>
+	<field name="Nombre" class="java.lang.String"/>
+	<field name="cedula" class="java.lang.Long"/>
+	<field name="Cuenta_Numero" class="java.lang.String"/>
+	<field name="Saldo" class="java.lang.Double"/>
+	<field name="Interes_Mora" class="java.lang.Double"/>
+	<field name="honorarios" class="java.lang.Double"/>
+	<field name="Obligacion_Total" class="java.lang.Float"/>
+	<field name="Fecha_Gestion" class="java.lang.String"/>
+	<field name="Fecha_Actualizacion" class="java.sql.Timestamp"/>
+	<field name="Fecha_Compromiso" class="java.sql.Timestamp"/>
+	<field name="Fecha_Actualizo" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="153" splitType="Stretch">
+			<staticText>
+				<reportElement x="128" y="51" width="271" height="32" uuid="992c84ec-bf67-407b-8c01-40fc34915879"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMPROMISO DE PAGO A CUOTAS CON DESCUENTO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="156" y="97" width="215" height="20" uuid="5bba4d13-51fe-455e-b484-ed5f238ca1bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new String ("No. "+$P{Id_acuerdo})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="156" y="133" width="215" height="20" uuid="6b5d6f68-d308-4905-8314-3de8f1d7dd43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Email}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="40" y="7" width="62" height="30" uuid="3ec696ad-1daf-4efc-a0a6-76854b71ee9f"/>
+				<imageExpression><![CDATA[$P{LOGOean.}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="430" y="7" width="125" height="97" uuid="fcd3fcbe-c361-446a-9500-2eac02470205"/>
+				<imageExpression><![CDATA[$P{LOGOSISTEM}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="75" splitType="Stretch">
+			<textField pattern="¤ #,##0">
+				<reportElement x="52" y="-2" width="439" height="77" uuid="4c5c5087-9a98-4568-a8c1-5206a48863e9"/>
+				<textElement textAlignment="Justified" markup="html"/>
+				<textFieldExpression><![CDATA[new String(" A la fecha el (la) Suscriptor(a) "+ "<b>"+$P{Nombre}.toUpperCase()+"</b>"+", identificado(a) con Cedula de Ciudadanía No."+ "<b>"+$P{Cedula}.toUpperCase()+"</b>"+ ", como aparece al pie de su firma, reconoce que en la actualidad adeuda a"+ "<b>"+" COLOMBIA MOVIL S.A E.S.P "+" </b>" + " un valor monto de"+"<b>"+" "+$P{Obligacion_Total_Letra}+ " PESOS M/CTE ("+$P{Obligacion_Total_Pesos}+"</b>"+"), discriminado de la siguiente forma:")]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="53">
+			<componentElement>
+				<reportElement key="table 7" style="table 7" stretchType="RelativeToBandHeight" x="52" y="0" width="423" height="53" uuid="38619bec-d3a7-40b2-9a0b-9660f68b9581"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 3" uuid="06d7cce3-6751-47f8-8b40-855c9ca77556">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBean.CollectionDataSource($P{TABLA}.getCompromisosEnLinea())]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="e3439d58-69b0-4d63-b3fd-bd80f4f9eb18">
+						<jr:columnHeader style="table 7_CH" height="26" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="26" uuid="b985a3b3-2d71-4b1a-96f3-1295adb8843a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Cuenta No.]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="39" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="39" uuid="e47c704b-114c-4c8c-aeca-0ccdd6c6dedf"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{referencia_pago}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="82" uuid="27541430-687e-4c46-94f7-c0ac91f4c000">
+						<jr:columnHeader style="table 7_CH" height="26" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="82" height="26" uuid="97d9f901-b139-473e-83c3-4e5ad90d927d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Saldo en Mora]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="39" rowSpan="1">
+							<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="82" height="39" uuid="3019e80d-1eda-4d7c-9002-6f4ce945c72a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{saldo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="88" uuid="bdf73e7b-47f0-4a86-8240-f6740bea09d9">
+						<jr:columnHeader style="table 7_CH" height="26" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="88" height="26" uuid="d6611808-5b51-4367-a141-6d4621b26470"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Intereses Moratorios]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="39" rowSpan="1">
+							<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="88" height="39" uuid="62b66fcf-2425-42f7-ab58-f6752e72c1b9"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{interes_mora}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="77" uuid="62c55293-556c-45e7-bf02-a591ed88d29a">
+						<jr:columnHeader style="table 7_CH" height="26" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="77" height="26" uuid="7e9f5bc2-c00c-4d3b-95b4-8bf252b78d89"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Honorarios]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="39" rowSpan="1">
+							<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="77" height="39" uuid="8affc3ec-0241-4bd2-94fe-b223199be946"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{honorarios}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="f173dac4-fb30-4350-b12d-611887539543">
+						<jr:columnHeader style="table 7_CH" height="26" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="26" uuid="f9357b41-3bf1-4bd3-bcc4-29930c873474"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Obligación Total]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="39" rowSpan="1">
+							<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="90" height="39" uuid="19f3a14b-308b-49b2-8b5e-db32debe0ccb"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{obligacion_total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+		<band height="204">
+			<textField pattern="¤ #,##0">
+				<reportElement x="52" y="10" width="439" height="70" uuid="d6d3ce27-a471-473c-9c24-f124433613f0"/>
+				<textElement textAlignment="Justified" markup="html"/>
+				<textFieldExpression><![CDATA[new String("Durante la gestión realizada por "+ "<b>"+" ANFEDIMO SAS"+"</b>"+", prestadora del Servicio de cobranzas de "+ "<b>"+" COLOMBIA MOVIL S.A. E.S.P. "+" </b>" + " se llegó a un compromiso de pago con el subscriptor mencionado, en el que se pactó un descuento sobre intereses moratorio del  "+ "<b>"+$P{Descuento_aplicar_letras}+"("+$P{Descuento_aplicar}+"%)</b>"+ " teniendo en cuenta de cartera registra una edad de mora de   "+ "<b>"+$P{Dias_Mora}+"</b>"+ " días.")]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement key="table 7" style="table 7" stretchType="RelativeToBandHeight" x="52" y="151" width="423" height="53" uuid="df554ff1-1853-4e83-a90a-d3dd089a42bb"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 3" uuid="4810a43a-850a-4504-b773-146c906dd5d0">
+						<datasetParameter name="Descuento_aplicar">
+							<datasetParameterExpression><![CDATA[$P{Descuento_aplicar}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBean.CollectionDataSource($P{TABLA}.getCompromisosEnLinea())]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="51e38373-05c6-4735-96f9-98f0fa4422d8">
+						<jr:columnHeader style="table 7_CH" height="26" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="26" uuid="bf7845f4-3630-47ac-9d24-71ab371feec4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Cuenta No.]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="38" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="38" uuid="c515a595-5e28-4b9e-8210-63687316fef8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{referencia_pago}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="7740d6da-80de-4b99-bf23-abc5ede1969b">
+						<jr:columnHeader style="table 7_CH" height="26" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="26" uuid="d76d8128-e0aa-4b41-86be-e5bedee07144"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Saldo en Mora]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="38" rowSpan="1">
+							<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="80" height="38" uuid="feb959fd-cbcd-466b-afb0-58e844c10346"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{saldo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="85" uuid="6f862bc2-718a-4872-884b-edae5252cd54">
+						<jr:columnHeader style="table 7_CH" height="26" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="85" height="26" uuid="9b409f54-373e-4323-bccf-b81466cc7784"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Intereses Moratorios]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="38" rowSpan="1">
+							<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="85" height="38" uuid="5846cf5a-cdb2-48ee-80f3-521146f0a3ac"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{intereses_mora_descuento}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="82" uuid="e110a380-18c4-48f6-be95-63a988b7fada">
+						<jr:columnHeader style="table 7_CH" height="26" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="82" height="26" uuid="99fccd69-969f-4867-b4db-d2babf4e87d2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Honorarios]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="38" rowSpan="1">
+							<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="82" height="38" uuid="8b3b167c-b0cc-449d-b618-f771170f07de"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{honorarios_descuento}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="5dd55d97-d760-467c-bbbe-939d28023a10">
+						<jr:columnHeader style="table 7_CH" height="26" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="26" uuid="830f9ce7-f3e6-42a8-897e-f677bd767fcd"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Obligación Total]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="38" rowSpan="1">
+							<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="90" height="38" uuid="d02ad8e1-24a4-413d-8512-d7ec8c69c17c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{valor_pactado}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField pattern="¤ #,##0">
+				<reportElement x="52" y="91" width="439" height="49" uuid="31bf0d71-8df0-425b-963d-b903e5db22a4"/>
+				<textElement textAlignment="Justified" markup="html"/>
+				<textFieldExpression><![CDATA[new String("Las partes declaran que el monto después del descuento asciende a "+"<b>"+" "+$P{Obligacion_Total_Descuento_letras})+" PESOS M/CTE ($"+$P{Obligacion_Total_Descuento}+"</b>"+") discriminado de la siguiente forma:"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="117">
+			<componentElement>
+				<reportElement key="table 7" style="table 7" stretchType="RelativeToBandHeight" x="52" y="57" width="412" height="53" uuid="b1c3c2c6-4566-4e5f-877c-662b381baf42"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset cuota" uuid="e35fcc09-f8f8-4495-acf3-38a30d95cb0e">
+						<datasetParameter name="Descuento_aplicar">
+							<datasetParameterExpression><![CDATA[$P{Descuento_aplicar}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="Referencia">
+							<datasetParameterExpression><![CDATA[$P{Referencia}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBean.CollectionDataSource($P{CUOTAS})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="113" uuid="533abfa1-7c8f-4832-8833-cee99ad50567">
+						<jr:columnHeader style="table 7_CH" height="31" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="113" height="31" uuid="85bea34b-7688-4d18-b830-b264ac77704f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Cuenta No.]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="38" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="113" height="38" uuid="624ee6c7-eff2-4f95-bcd7-18b6bb00d6af"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$P{Referencia}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="e8ec6bd8-ea5a-4f49-824f-39f1184eb1b2">
+						<jr:columnHeader style="table 7_CH" height="31" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="31" uuid="81f30c39-a018-4030-8e07-d6ff5f38a9b2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Fecha de pago]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="38" rowSpan="1">
+							<textField pattern="dd-MM-yyyy" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="90" height="38" uuid="d0abc27c-0a01-449b-b144-737d55a1fcd0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{fechaCuota}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="126" uuid="8d99e0cc-b1d8-42d1-b811-89da552d62c8">
+						<jr:columnHeader style="table 7_CH" height="31" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="126" height="31" uuid="c0fe39fa-616a-4440-9b23-b5bb90e4e237"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Cuota]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="38" rowSpan="1">
+							<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="126" height="38" uuid="cfca8fde-e7b4-467d-b897-8acad5356fb7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{valorCuota}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="108" uuid="75d4d78c-202c-48fa-b427-dfcdefcf72ad">
+						<jr:columnHeader style="table 7_CH" height="31" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="108" height="30" uuid="d8b27c6c-07f0-4d8d-b190-0cf17a04d660"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Saldo]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="38" rowSpan="1">
+							<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="108" height="38" uuid="65c0b773-6e8e-4ffe-9ed8-9f0f62adf46f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{saldo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField pattern="¤ #,##0">
+				<reportElement x="52" y="24" width="439" height="19" uuid="740bad7f-7e24-408c-bea7-518193dce9b9"/>
+				<textElement textAlignment="Justified" markup="html"/>
+				<textFieldExpression><![CDATA[new String("El suscriptor se compromete a pagar el monto acordado de la siguiente forma:")]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="529">
+			<staticText>
+				<reportElement x="52" y="234" width="439" height="125" uuid="c8609052-22da-4f10-8024-1b68cef25a40"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[- El compromiso de pago solo aplica por el saldo en mora a la fecha.
+
+- El compromiso de pago no inlcuye montos adeudados por cláusulas de permanencia.
+
+- En el evento de presentarse algún incumplimiento a lo aquí establecido, Colombia Móvil procederá, al cobro de los intereses moratorios respectivos, y se dará continuidad al cobro al que haya lugar.
+
+- El presente acuerdo no exime al cliente del reporte a las Centrales de Riesgos y la reactivación del servicio solo se dará hasta tanto se cubra el saldo pendiente en los casos que aplique.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="204" width="439" height="20" uuid="087f6a28-8cdb-477e-8675-3eb2b411b03f"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aspectos adicionales:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="56" y="375" width="435" height="44" uuid="f1ef90f1-b927-446e-8d4a-5f0a9a92ec26"/>
+				<textElement textAlignment="Justified" markup="html"/>
+				<textFieldExpression><![CDATA[new String("Para constancia y señal de conformidad, se firma por las partes que intervienen en este acuerdo de pago el "+ "<b>"+$P{Dia_acuerdo_letras}+"("+$P{Dia_acuerdo}+")</b>"+ " días del mes de "+"<b>"+" "+$P{Mes_acuerdo_letras}+ " del "+$P{Anio_acuerdo_letras}+ "("+$P{Anio_acuerdo}+"</b>"+")."     )]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement key="table 9" style="table 9" x="52" y="436" width="439" height="90" backcolor="#6699FF" uuid="a631adaf-f44b-4bab-bba6-e45f7470d0ff">
+					<property name="net.sf.jasperreports.export.pdf.tag.table" value="full"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 3" uuid="7a3a3bb8-58fa-4064-9873-e6c4144905f9">
+						<datasetParameter name="Descuento_aplicar">
+							<datasetParameterExpression><![CDATA[$P{Descuento_aplicar}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource(1)]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="441" uuid="7195ca0d-36d1-4e6c-8d52-3e6b89fe136e">
+						<jr:columnHeader height="25" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="441" height="25" forecolor="#000000" backcolor="#99CCFF" uuid="c3628f26-6482-4fb6-b8f0-153acfb090d3">
+									<property name="net.sf.jasperreports.export.pdf.tag.h1"/>
+								</reportElement>
+								<box>
+									<pen lineWidth="0.25"/>
+									<topPen lineWidth="0.25"/>
+									<leftPen lineWidth="0.25"/>
+									<bottomPen lineWidth="0.25"/>
+									<rightPen lineWidth="0.25"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Bottom">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Información Descuentos Adicionales]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:column width="202" uuid="120a480c-a3c4-4cfb-8ed3-8963521285df">
+							<jr:columnHeader height="22" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="202" height="22" uuid="30f14409-fcd3-4546-9df5-53298c37bd3e"/>
+									<box>
+										<pen lineWidth="0.25" lineStyle="Solid"/>
+										<topPen lineWidth="0.25" lineStyle="Solid"/>
+										<leftPen lineWidth="0.25" lineStyle="Solid"/>
+										<bottomPen lineWidth="0.25" lineStyle="Solid"/>
+										<rightPen lineWidth="0.25" lineStyle="Solid"/>
+									</box>
+									<textElement textAlignment="Justified" verticalAlignment="Bottom">
+										<font size="12"/>
+									</textElement>
+									<text><![CDATA[ Funcionario ean. autoriza]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter height="22" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="202" height="22" uuid="9d56f9b5-3223-4677-8d64-fb669797bbdd"/>
+									<box>
+										<pen lineWidth="0.25"/>
+										<topPen lineWidth="0.25"/>
+										<leftPen lineWidth="0.25"/>
+										<bottomPen lineWidth="0.25"/>
+										<rightPen lineWidth="0.25"/>
+									</box>
+									<textElement verticalAlignment="Bottom">
+										<font size="12"/>
+									</textElement>
+									<text><![CDATA[ % de Descuento autorización]]></text>
+								</staticText>
+							</jr:columnFooter>
+							<jr:detailCell height="21" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="202" height="21" uuid="bb8dd3b2-25f1-4cb9-b182-262ceb4c3162"/>
+									<box>
+										<pen lineWidth="0.25"/>
+										<topPen lineWidth="0.25"/>
+										<leftPen lineWidth="0.25"/>
+										<bottomPen lineWidth="0.25"/>
+										<rightPen lineWidth="0.25"/>
+									</box>
+									<textElement verticalAlignment="Bottom">
+										<font size="12"/>
+									</textElement>
+									<text><![CDATA[ Fecha autorización]]></text>
+								</staticText>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="239" uuid="acc26ea6-0a31-48f7-9d88-0eb234f78b98">
+							<jr:columnHeader height="22" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="239" height="22" uuid="62cd2282-d803-40bf-b804-480cf0f1abf3"/>
+									<box>
+										<pen lineWidth="0.25"/>
+										<topPen lineWidth="0.25"/>
+										<leftPen lineWidth="0.25"/>
+										<bottomPen lineWidth="0.25"/>
+										<rightPen lineWidth="0.25"/>
+									</box>
+									<text><![CDATA[]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter height="22" rowSpan="1">
+								<textField pattern="###0">
+									<reportElement x="0" y="0" width="20" height="22" uuid="334eff89-03dd-4782-916b-b3469f2a5645"/>
+									<box>
+										<pen lineWidth="0.0"/>
+										<topPen lineWidth="0.0"/>
+										<leftPen lineWidth="0.0"/>
+										<bottomPen lineWidth="0.0"/>
+										<rightPen lineWidth="0.0"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Bottom">
+										<font isBold="true"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$P{Descuento_aplicar}]]></textFieldExpression>
+								</textField>
+								<staticText>
+									<reportElement x="20" y="1" width="219" height="21" uuid="5f2afbcb-3615-4465-870b-8f3a9760ca15"/>
+									<textElement verticalAlignment="Bottom">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[%]]></text>
+								</staticText>
+							</jr:columnFooter>
+							<jr:detailCell height="21" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="239" height="21" uuid="5849a5af-a449-430d-9983-0aec77342b2b"/>
+									<box>
+										<pen lineWidth="0.25"/>
+										<topPen lineWidth="0.25"/>
+										<leftPen lineWidth="0.25"/>
+										<bottomPen lineWidth="0.25"/>
+										<rightPen lineWidth="0.25"/>
+									</box>
+									<text><![CDATA[]]></text>
+								</staticText>
+							</jr:detailCell>
+						</jr:column>
+					</jr:columnGroup>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<lastPageFooter>
+		<band height="50">
+			<textField>
+				<reportElement x="43" y="20" width="100" height="15" uuid="2c5930a9-d36e-448a-b5e9-990130252fad"/>
+				<textElement verticalAlignment="Bottom">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Cedula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="19" y="0" width="276" height="20" uuid="61c486a8-a3d3-4305-8ad4-fb518a9eeff5"/>
+				<textElement verticalAlignment="Bottom">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Nombre}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="35" width="100" height="15" uuid="3a05fd39-0397-47cd-b754-ac2c97b59550"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Suscriptor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="20" width="24" height="15" uuid="0429ea7c-65c6-4da0-b890-363de1938489"/>
+				<textElement verticalAlignment="Bottom">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[C.C.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="362" y="10" width="133" height="40" uuid="a5f58eed-523c-422f-8bbb-56bf1795dff4"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Coordinador de Cartera
+ANFEDIMO S.A.S
+]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band height="47" splitType="Stretch"/>
+	</summary>
+</jasperReport>

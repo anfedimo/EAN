@@ -1,0 +1,180 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+	<style type="text/css">
+.ui-paginator a {
+	margin-right: 5px;
+}
+</style>
+
+	<script widgetVar="statusDialog" id="statusDialog" modal="true">
+		draggable="false" closable="false" resizable="false"
+		showHeader="false">
+		<p:graphicImage library="img" name="ajax-loader.gif" />
+		</script>
+
+
+
+
+	<meta content="text/html; charset=UTF-8" />
+	<center>
+		<div class="ui-g">
+			<div class="ui-g-12">
+				<p:growl id="growl" showDetail="true" sticky="true" />
+				<h:form id="frmcompromiso3">
+					<p:dialog id="dlCompromiso3" closable="true" header="Advertencia"
+						widgetVar="dlCompromiso3" modal="true" styleClass="dialog"
+						width="500" height="60">
+						<p:panel id="pnlDlMensaje">
+							<h:outputText value="#{compromisoBean.mensajeError}" />
+						</p:panel>
+					</p:dialog>
+
+
+					<p:panel header="COMPROMISO DE PAGO A CUOTAS CON DESCUENTO"
+						id="pnlCompromiso3">
+						<p:panelGrid columns="2" styleClass="companyHeaderGrid">
+
+							<h:panelGrid columns="2">
+
+
+
+								<h:outputLabel value="Referencia de Pago: *" for="txtReferencia" />
+								<p:inputText id="txtReferencia"
+									value="#{compromisoBean.referencia_pago}" required="true"
+									label="referencia" size="40" autocomplete="off"
+									requiredMessage="Por favor ingrese el numero de referencia"
+									validatorMessage="Formato invalido del número de referencia o excede el máximo de 14 dígitos">
+									<f:validateLength maximum="14" />
+									<f:validateDoubleRange minimum="0" />
+									<p:message for="txtReferencia" />
+								</p:inputText>
+
+								<h:outputLabel value="Correo: *" for="txtCorreo" />
+								<p:inputText autocomplete="off" id="txtCorreo"
+									value="#{compromisoBean.email}" required="true" label="correo"
+									size="40" requiredMessage="Por favor ingrese el correo"
+									validatorMessage="Formato invalido para el correo">
+									<f:validateRegex
+										pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+									<p:message for="txtCorreo" />
+								</p:inputText>
+
+								<h:outputLabel value="Fecha Acuerdo: " />
+								<p:calendar id="popup-2" value="#{compromisoBean.fecha_cuota}"></p:calendar>
+
+
+								<h:outputLabel value="Descuento a aplicar: *"
+									for="txtDescuentoAplicar"></h:outputLabel>
+								<p:inputNumber symbol="%" symbolPosition="s" emptyValue="sign"
+									minValue="-0.1" maxValue="100" id="txtDescuentoAplicar"
+									value="#{compromisoBean.descuentoAplicar}" required="true"
+									label="descuento aplicar" size="40" autocomplete="off"
+									requiredMessage="Por favor ingrese el descuento a aplicar"
+									validatorMessage="Formato Invalido Descuento Aplicado">
+									<f:validateDoubleRange minimum="0" />
+									<p:message for="txtDescuentoAplicar" />
+								</p:inputNumber>
+
+
+
+								<h:outputLabel value="Numero de cuotas: *"
+									for="txtAplicarCuotas"></h:outputLabel>
+								<p:inputNumber symbolPosition="s" emptyValue="sign"
+									minValue="-0.1" maxValue="6" id="txtAplicarCuotas"
+									value="#{compromisoBean.cantCuotas}" required="true"
+									label="cantidad de cuotas" size="40" autocomplete="off"
+									requiredMessage="Por favor ingrese el numero de cuotas"
+									validatorMessage="Formato Invalido Para las cuotas">
+									<f:validateDoubleRange minimum="0" />
+									<p:message for="txtAplicarCuotas" />
+								</p:inputNumber>
+
+
+
+								<p:commandButton value="Generar Cuotas"
+									action="#{compromisoBean.generarCuotas}"
+									update="pnlCompromiso3,pnlDlMensaje, growl"
+									onclick="PF('statusDialog').show();"
+									oncomplete="PF('statusDialog').hide();">
+								</p:commandButton>
+
+
+							</h:panelGrid>
+
+
+							<c:if test="#{empty compromisoBean.cuotas}">
+								<p>No se han generado Cuotas</p>
+							</c:if>
+
+							<c:if test="#{not empty compromisoBean.cuotas}">
+
+
+								<p:dataTable value="#{compromisoBean.cuotas}" var="cuota"
+									style="width:400px">
+
+									<p:column headerText="Numero cuota">
+										<p:outputLabel value="#{cuota.numeroCuota}" />
+									</p:column>
+									<p:column headerText="Fecha">
+										<p:calendar value="#{cuota.fechaCuota}"></p:calendar>
+									</p:column>
+									<p:column headerText="Valor">
+										<p:outputLabel value="#{cuota.valorCuota}">
+											<f:convertNumber pattern="$#,##0.00" currencySymbol="$" />
+										</p:outputLabel>
+									</p:column>
+
+								</p:dataTable>
+							</c:if>
+						</p:panelGrid>
+						<p:panelGrid columns="2">
+
+							<c:if test="#{compromisoBean.existe3 == true}">
+								<p:commandButton style="color:red" ajax="false"
+									value="Visualizar Compromiso" update="pnlCompromiso3"
+									actionListener="#{compromisoBean.generateReport03}"
+									icon="ui-icon-search" onclick="PF('statusDialog').show();"
+									oncomplete="PF('statusDialog').hide();" >
+								</p:commandButton>
+
+
+								<p:commandButton style="color:green" ajax="false"
+									value="Descargar Compromiso"
+									update="pnlCompromiso3, @form, visualizar3"
+									actionListener="#{compromisoBean.downloadFile}"
+									icon="ui-icon-check">
+								</p:commandButton>
+							</c:if>
+
+
+						</p:panelGrid>
+
+
+						<div class="column-center" id="visualizar3">
+							<c:if test="#{compromisoBean.existe3 == true}">
+								<c:if test="#{navegacionBean.compromiso03 == 1}">
+									<c:if test="#{compromisoBean.visualizarCompromiso3 == 1}">
+										<p:media cache="false"
+											rendered="#{compromisoBean.media ne null}" width="900"
+											height="600" value="#{compromisoBean.media}" player="pdf">
+										</p:media>
+									</c:if>
+								</c:if>
+							</c:if>
+						</div>
+					</p:panel>
+
+				</h:form>
+
+			</div>
+		</div>
+	</center>
+
+
+</ui:composition>
+

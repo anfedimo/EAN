@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<h:outputStylesheet name="./css/default.css" />
+	<h:outputStylesheet name="cssLayout.css" library="css" />
+	<link rel="icon" type="image/png"
+		href="../../resources/img/favicon.png" />
+	<h:outputScript name="ipdialbox.js" library="js"></h:outputScript>
+	<title>Compromisos ean.</title>
+</h:head>
+
+<h:body>
+	<style type="text/css">
+</style>
+	<p:dialog widgetVar="statusDialog" id="statusDialog" modal="true"
+		draggable="false" closable="false" resizable="false"
+		showHeader="false">
+		<p:graphicImage library="img" name="ajax-loader.gif" />
+	</p:dialog>
+
+	<div id="top" class="top">
+		<h:form>
+			<h:commandLink action="#{inicioBean..regresarInicio}">
+				<h:graphicImage value="../../resources/img/logo.png"
+					style="width: 50px;" />
+			</h:commandLink>
+			<ui:remove>
+				<p:inputText value="#{busquedaBean..buscar}"
+					style="position: relative;top: -18px; left: 827px;"></p:inputText>
+
+				<p:commandButton action="#{busquedaBean..buscar}" value="BUSCAR"
+					style="position: relative;right: -829px;top: -18px;"
+					id="buscarCont" onclick="PF('statusDialog').show();"
+					oncomplete="PF('statusDialog').hide();" />
+			</ui:remove>
+
+			<div id="header">
+				<ul class="nav">
+					<li><p:outputLabel value="${loginBean..usuarioHermes.nombre}" />
+						<ul
+							style="-webkit-box-shadow: 6px 10px 37px 0px rgba(0, 0, 0, 0.75); -moz-box-shadow: 6px 10px 37px 0px rgba(0, 0, 0, 0.75); box-shadow: 6px 10px 37px 0px rgba(0, 0, 0, 0.75);">
+							<li><p:outputLabel
+									value="${loginBean..usuarioHermes.usuarioaplicacion.grupo.nombre}"></p:outputLabel></li>
+							<li><p:outputLabel
+									value="${loginBean..usuarioHermes.usuario}"></p:outputLabel></li>
+							<li><p:commandLink value="Cerrar Sesión"
+									styleClass="cerrar_sesion"
+									onclick="window.location='#{facesContext.externalContext.requestContextPath}/login.xhtml?response=0';"></p:commandLink></li>
+						</ul></li>
+				</ul>
+			</div>
+		</h:form>
+		<ui:insert name="top"></ui:insert>
+	</div>
+
+
+	<div id="content" class="content">
+		<ui:insert name="content">Content</ui:insert>
+	</div>
+
+
+	<p:idleMonitor onactive="PF('popup_sesion_expirada').show();"
+		timeout="#{session.maxInactiveInterval * 1000}" />
+	<p:dialog header="Session Expirada" widgetVar="popup_sesion_expirada"
+		modal="true" fixedCenter="true" closable="false" width="400"
+		visible="false">
+		<h:outputText value="Su sesion a Expirado ! , Vuelva a iniciar sesion" />
+		<br></br>
+		<center>
+			<input id="confirmBackToLogin" type="button"
+				value="Volver a acceder a la aplicacion"
+				onclick="window.location='#{facesContext.externalContext.requestContextPath}/login.xhtml?response=3';"
+				style="margin-top: 1%;" />
+		</center>
+	</p:dialog>
+
+</h:body>
+
+</html>
